@@ -1658,8 +1658,8 @@ build_svt-vp9() {
 }
 
 build_svt-av1() {
-  do_git_checkout https://github.com/gianni-rosato/svt-av1-psy.git
-  cd svt-av1-psy_git
+  do_git_checkout https://github.com/BlueSwordM/svt-av1-psyex.git
+  cd svt-av1-psyex_git
   cd Build
     do_cmake_from_build_dir .. "-DCMAKE_BUILD_TYPE=Release -DCMAKE_SYSTEM_PROCESSOR=AMD64"
     do_make_and_make_install
